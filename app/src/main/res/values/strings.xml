@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiBolsillo</string>
+    <string name="app_titulo">MiBolsillo · Rastreador de Gastos</string>
+
+    <string-array name="opciones_menu">
+        <item>Perfil</item>
+        <item>Fotos</item>
+        <item>Video</item>
+        <item>Web</item>
+        <item>Botones</item>
+    </string-array>
+
+    <string name="titulo_perfil">Perfil del usuario</string>
+    <string name="titulo_fotos">Registro de gastos</string>
+    <string name="titulo_video">Video educativo</string>
+    <string name="titulo_web">Navegador integrado</string>
+    <string name="titulo_botones">Acciones rápidas</string>
+
+    <string name="perfil_nombre">Ana María Torres</string>
+    <string name="perfil_rol">Usuario · Finanzas personales</string>
+    <string name="perfil_ciudad">Pereira, Colombia</string>
+    <string name="perfil_resumen_titulo">Resumen de finanzas · marzo</string>
+    <string name="perfil_resumen_sub">Panel de control e indicadores del mes</string>
+
+    <string name="ind_presupuesto">Presupuesto</string>
+    <string name="ind_presupuesto_valor">$ 2.000.000</string>
+    <string name="ind_presupuesto_pie">definido por el usuario</string>
+    <string name="ind_gastado">Gastado</string>
+    <string name="ind_gastado_valor">$ 1.445.700</string>
+    <string name="ind_gastado_pie">6 registros</string>
+    <string name="ind_saldo">Saldo disponible</string>
+    <string name="ind_saldo_valor">$ 554.300</string>
+    <string name="ind_consumido" formatted="false">72 % del presupuesto consumido</string>
+
+    <string name="perfil_formacion_titulo">Formación académica</string>
+    <string name="perfil_formacion">Especialización en Ingeniería de Software\nPolitécnico Grancolombiano · 2026\nIngeniería de Sistemas · 2021</string>
+    <string name="perfil_experiencia_titulo">Experiencia</string>
+    <string name="perfil_experiencia">Analista de datos financieros (3 años)\nAuxiliar contable (2 años)\nAsesora de presupuesto familiar</string>
+    <string name="perfil_metas_titulo">Metas financieras</string>
+    <string name="perfil_metas" formatted="false">Fondo de emergencia: 6 meses de gastos\nReducir el gasto en transporte un 15 %\nAhorro programado mensual del 20 %\n\nRegistra cada gasto el mismo día en que ocurre, clasifica los comprobantes por categoría y revisa el balance los domingos. Este bloque es intencionalmente extenso para demostrar la barra de desplazamiento solicitada en el enunciado.</string>
+
+    <string name="detalle_titulo">Detalle del gasto seleccionado</string>
+    <string name="detalle_ejemplo_titulo">Mercado · 12/03/2026</string>
+    <string name="detalle_ejemplo_categoria">Categoría: Alimentación   Valor: $ 186.400</string>
+    <string name="detalle_ejemplo_medio">Medio de pago: tarjeta débito</string>
+    <string name="detalle_ejemplo_comprobante">Comprobante: factura POS N.º 004512</string>
+    <string name="detalle_ayuda">Seleccione otro registro para ver su detalle</string>
+    <string name="detalle_categoria">Categoría: %1$s   Valor: %2$s</string>
+    <string name="detalle_medio">Medio de pago: %1$s</string>
+    <string name="detalle_comprobante">Comprobante: %1$s</string>
+
+    <string name="video_titulo">Cómo construir tu presupuesto mensual</string>
+    <string name="video_meta">Educación financiera · 4:15 min</string>
+    <string name="video_descripcion">Video de apoyo que explica la regla 50/30/20 para distribuir los ingresos entre necesidades, gastos personales y ahorro. Use los controles para reproducir, pausar y avanzar. Para usar un video propio, copie el archivo en res/raw con el nombre video_finanzas.mp4.</string>
+
+    <string name="web_hint">Digite la dirección del sitio</string>
+    <string name="web_url_defecto">https://www.superfinanciera.gov.co</string>
+    <string name="web_boton_ir">Ir</string>
+    <string name="web_url_vacia">Digite una dirección válida</string>
+
+    <string name="btn_registrar">Registrar nuevo gasto</string>
+    <string name="btn_grafico">Ver gráfico mensual</string>
+    <string name="btn_presupuesto">Definir presupuesto</string>
+    <string name="btn_escanear">Escanear factura</string>
+
+    <string name="resultado_titulo">Resultado de la acción</string>
+    <string name="resultado_inicial">Pulse un botón para ver aquí el resultado de la acción. Los eventos se programan en la Entrega 2.</string>
+
+    <string name="grafico_titulo">Gasto por categoría</string>
+    <string name="cat_alimentacion">Alim.</string>
+    <string name="cat_transporte">Trans.</string>
+    <string name="cat_hogar">Hogar</string>
+    <string name="cat_ocio">Ocio</string>
+    <string name="cat_salud">Salud</string>
+
+    <string name="desc_icono_menu">Icono de la opción del menú</string>
+    <string name="desc_foto_perfil">Fotografía del usuario</string>
+    <string name="desc_comprobante">Imagen del comprobante</string>
+</resources>

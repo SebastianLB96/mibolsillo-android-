@@ -1,0 +1,2 @@
+Copie aqui el archivo de video con el nombre exacto video_finanzas.mp4
+Si la carpeta queda vacia, VideoFragment reproduce un video de ejemplo desde internet.
