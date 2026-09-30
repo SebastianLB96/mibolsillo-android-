@@ -45,7 +45,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="@string/detalle_ejemplo_titulo"
             android:textColor="@color/gris_oscuro"
             android:textSize="12sp" />
 
@@ -53,7 +52,6 @@
             android:id="@+id/txtDetalleCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/detalle_ejemplo_categoria"
             android:textColor="@color/gris_oscuro"
             android:textSize="12sp" />
 
@@ -61,7 +59,6 @@
             android:id="@+id/txtDetalleMedio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/detalle_ejemplo_medio"
             android:textColor="@color/gris_oscuro"
             android:textSize="12sp" />
 
@@ -69,7 +66,6 @@
             android:id="@+id/txtDetalleComprobante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/detalle_ejemplo_comprobante"
             android:textColor="@color/gris_oscuro"
             android:textSize="12sp" />
 

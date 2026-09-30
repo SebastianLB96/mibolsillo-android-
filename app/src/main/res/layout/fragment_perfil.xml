@@ -161,9 +161,9 @@
                         android:textSize="13sp" />
 
                     <TextView
+                        android:id="@+id/txtCantidadRegistros"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/ind_gastado_pie"
                         android:textColor="@color/gris_texto"
                         android:textSize="10sp" />
                 </LinearLayout>
@@ -202,16 +202,16 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/txtConsumido"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="@string/ind_consumido"
                         android:textColor="@color/gris_texto"
                         android:textSize="11sp" />
                 </LinearLayout>
 
                 <ProgressBar
-                    android:id="@+id/barraPresupuesto"
+                    android:id="@+id/barraPresupuestoPerfil"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"

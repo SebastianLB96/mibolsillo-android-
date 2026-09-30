@@ -17,11 +17,57 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
+        <!-- ============ Datos del gasto (RF5) ============ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/form_datos_gasto"
+                android:textColor="@color/verde_oscuro"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtValorGasto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="none"
+                android:hint="@string/form_valor"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spnCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:entries="@array/categorias" />
+
+            <EditText
+                android:id="@+id/txtMedioPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="none"
+                android:hint="@string/form_medio"
+                android:inputType="text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
         <Button
             android:id="@+id/btnRegistrarGasto"
             android:layout_width="match_parent"
             android:layout_height="46dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/bg_boton_verde"
             android:text="@string/btn_registrar"
             android:textColor="@color/blanco"
@@ -39,11 +85,23 @@
             android:textSize="13sp"
             android:textStyle="bold" />
 
+        <!-- ============ Presupuesto (RF7) ============ -->
+        <EditText
+            android:id="@+id/txtPresupuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:autofillHints="none"
+            android:hint="@string/form_presupuesto"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textSize="12sp" />
+
         <Button
             android:id="@+id/btnDefinirPresupuesto"
             android:layout_width="match_parent"
             android:layout_height="46dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/bg_boton_azul"
             android:text="@string/btn_presupuesto"
             android:textColor="@color/blanco"
@@ -60,11 +118,32 @@
             android:textColor="@color/gris_texto"
             android:textSize="13sp" />
 
+        <!-- ============ Avance del presupuesto ============ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/titulo_presupuesto"
+            android:textColor="@color/verde_oscuro"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/barraPresupuesto"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginTop="6dp"
+            android:max="100"
+            android:progress="72"
+            android:progressTint="@color/verde_oscuro" />
+
+        <!-- ============ Resultado de la accion ============ -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_card"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card_verde"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -83,10 +162,11 @@
                 android:layout_marginTop="4dp"
                 android:lineSpacingExtra="2dp"
                 android:text="@string/resultado_inicial"
-                android:textColor="@color/gris_texto"
+                android:textColor="@color/gris_oscuro"
                 android:textSize="12sp" />
         </LinearLayout>
 
+        <!-- ============ Gasto por categoria (RF9) ============ -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -105,10 +185,9 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:baselineAligned="false"
-                android:gravity="bottom"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -118,10 +197,18 @@
                     android:gravity="center_horizontal|bottom"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/pctAlimentacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gris_texto"
+                        android:textSize="9sp" />
+
                     <View
                         android:id="@+id/barraAlimentacion"
                         android:layout_width="22dp"
-                        android:layout_height="62dp"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="2dp"
                         android:background="@color/verde_primario" />
 
                     <TextView
@@ -140,10 +227,18 @@
                     android:gravity="center_horizontal|bottom"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/pctTransporte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gris_texto"
+                        android:textSize="9sp" />
+
                     <View
                         android:id="@+id/barraTransporte"
                         android:layout_width="22dp"
-                        android:layout_height="40dp"
+                        android:layout_height="12dp"
+                        android:layout_marginTop="2dp"
                         android:background="@color/verde_oscuro" />
 
                     <TextView
@@ -162,10 +257,18 @@
                     android:gravity="center_horizontal|bottom"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/pctHogar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gris_texto"
+                        android:textSize="9sp" />
+
                     <View
                         android:id="@+id/barraHogar"
                         android:layout_width="22dp"
-                        android:layout_height="78dp"
+                        android:layout_height="68dp"
+                        android:layout_marginTop="2dp"
                         android:background="@color/azul" />
 
                     <TextView
@@ -184,10 +287,18 @@
                     android:gravity="center_horizontal|bottom"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/pctOcio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gris_texto"
+                        android:textSize="9sp" />
+
                     <View
                         android:id="@+id/barraOcio"
                         android:layout_width="22dp"
-                        android:layout_height="30dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="2dp"
                         android:background="@color/ambar" />
 
                     <TextView
@@ -206,10 +317,18 @@
                     android:gravity="center_horizontal|bottom"
                     android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/pctSalud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gris_texto"
+                        android:textSize="9sp" />
+
                     <View
                         android:id="@+id/barraSalud"
                         android:layout_width="22dp"
-                        android:layout_height="52dp"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="2dp"
                         android:background="@color/rojo" />
 
                     <TextView

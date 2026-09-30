@@ -11,53 +11,72 @@
         <item>Botones</item>
     </string-array>
 
+    <string-array name="categorias">
+        <item>Alimentacion</item>
+        <item>Transporte</item>
+        <item>Hogar</item>
+        <item>Ocio</item>
+        <item>Salud</item>
+    </string-array>
+
     <string name="titulo_perfil">Perfil del usuario</string>
     <string name="titulo_fotos">Registro de gastos</string>
     <string name="titulo_video">Video educativo</string>
     <string name="titulo_web">Navegador integrado</string>
     <string name="titulo_botones">Acciones rápidas</string>
+    <string name="titulo_presupuesto">Avance del presupuesto del mes</string>
 
-    <string name="perfil_nombre">Ana María Torres</string>
+    <!-- ===== Perfil ===== -->
+    <string name="perfil_nombre">Sebastián López Betancurt</string>
     <string name="perfil_rol">Usuario · Finanzas personales</string>
-    <string name="perfil_ciudad">Pereira, Colombia</string>
-    <string name="perfil_resumen_titulo">Resumen de finanzas · marzo</string>
-    <string name="perfil_resumen_sub">Panel de control e indicadores del mes</string>
+    <string name="perfil_ciudad">Bogotá, Colombia</string>
+    <string name="perfil_resumen_titulo">Resumen de finanzas del mes</string>
+    <string name="perfil_resumen_sub">Panel de control e indicadores</string>
 
     <string name="ind_presupuesto">Presupuesto</string>
     <string name="ind_presupuesto_valor">$ 2.000.000</string>
     <string name="ind_presupuesto_pie">definido por el usuario</string>
     <string name="ind_gastado">Gastado</string>
     <string name="ind_gastado_valor">$ 1.445.700</string>
-    <string name="ind_gastado_pie">6 registros</string>
+    <string name="ind_registros">%1$d registros</string>
     <string name="ind_saldo">Saldo disponible</string>
     <string name="ind_saldo_valor">$ 554.300</string>
-    <string name="ind_consumido" formatted="false">72 % del presupuesto consumido</string>
+    <string name="ind_consumido">%1$d %% del presupuesto consumido</string>
 
     <string name="perfil_formacion_titulo">Formación académica</string>
     <string name="perfil_formacion">Especialización en Ingeniería de Software\nPolitécnico Grancolombiano · 2026\nIngeniería de Sistemas · 2021</string>
     <string name="perfil_experiencia_titulo">Experiencia</string>
-    <string name="perfil_experiencia">Analista de datos financieros (3 años)\nAuxiliar contable (2 años)\nAsesora de presupuesto familiar</string>
+    <string name="perfil_experiencia">Analista de datos financieros (3 años)\nAuxiliar contable (2 años)\nAsesor de presupuesto familiar</string>
     <string name="perfil_metas_titulo">Metas financieras</string>
     <string name="perfil_metas" formatted="false">Fondo de emergencia: 6 meses de gastos\nReducir el gasto en transporte un 15 %\nAhorro programado mensual del 20 %\n\nRegistra cada gasto el mismo día en que ocurre, clasifica los comprobantes por categoría y revisa el balance los domingos. Este bloque es intencionalmente extenso para demostrar la barra de desplazamiento solicitada en el enunciado.</string>
 
+    <!-- ===== Registro de gastos ===== -->
     <string name="detalle_titulo">Detalle del gasto seleccionado</string>
-    <string name="detalle_ejemplo_titulo">Mercado · 12/03/2026</string>
-    <string name="detalle_ejemplo_categoria">Categoría: Alimentación   Valor: $ 186.400</string>
-    <string name="detalle_ejemplo_medio">Medio de pago: tarjeta débito</string>
-    <string name="detalle_ejemplo_comprobante">Comprobante: factura POS N.º 004512</string>
     <string name="detalle_ayuda">Seleccione otro registro para ver su detalle</string>
+    <string name="detalle_encabezado">%1$s · %2$s</string>
     <string name="detalle_categoria">Categoría: %1$s   Valor: %2$s</string>
     <string name="detalle_medio">Medio de pago: %1$s</string>
     <string name="detalle_comprobante">Comprobante: %1$s</string>
 
+    <!-- ===== Video ===== -->
     <string name="video_titulo">Cómo construir tu presupuesto mensual</string>
     <string name="video_meta">Educación financiera · 4:15 min</string>
     <string name="video_descripcion">Video de apoyo que explica la regla 50/30/20 para distribuir los ingresos entre necesidades, gastos personales y ahorro. Use los controles para reproducir, pausar y avanzar. Para usar un video propio, copie el archivo en res/raw con el nombre video_finanzas.mp4.</string>
 
+    <!-- ===== Web ===== -->
     <string name="web_hint">Digite la dirección del sitio</string>
     <string name="web_url_defecto">https://www.superfinanciera.gov.co</string>
     <string name="web_boton_ir">Ir</string>
     <string name="web_url_vacia">Digite una dirección válida</string>
+
+    <!-- ===== Panel de operaciones ===== -->
+    <string name="form_datos_gasto">Datos del gasto</string>
+    <string name="form_valor">Valor del gasto en pesos</string>
+    <string name="form_medio">Medio de pago (opcional)</string>
+    <string name="form_presupuesto">Presupuesto del mes en pesos</string>
+    <string name="medio_por_defecto">Efectivo</string>
+    <string name="medio_escaneo">Tarjeta débito</string>
+    <string name="comprobante_manual">Registro manual</string>
 
     <string name="btn_registrar">Registrar nuevo gasto</string>
     <string name="btn_grafico">Ver gráfico mensual</string>
@@ -65,9 +84,20 @@
     <string name="btn_escanear">Escanear factura</string>
 
     <string name="resultado_titulo">Resultado de la acción</string>
-    <string name="resultado_inicial">Pulse un botón para ver aquí el resultado de la acción. Los eventos se programan en la Entrega 2.</string>
+    <string name="resultado_inicial">Digite el valor del gasto y pulse un botón para ver aquí el resultado de la acción.</string>
+
+    <string name="res_registrar">Gasto registrado correctamente.\nCategoría: %1$s   Valor: %2$s\nSaldo disponible: %3$s (%4$d %% consumido).</string>
+    <string name="res_grafico">Total gastado del mes: %1$s.\nAlimentación %2$d %%, transporte %3$d %%, hogar %4$d %%, ocio %5$d %%, salud %6$d %%.</string>
+    <string name="res_presupuesto">Presupuesto del mes actualizado en %1$s.\nSaldo disponible: %2$s (%3$d %% consumido).</string>
+    <string name="res_escanear">Escaneo simulado: se reconoció %1$s en la categoría %2$s.\nConfirme o corrija los datos y pulse Registrar nuevo gasto.</string>
+    <string name="res_exceso">Atención: superó el presupuesto del mes en %1$s.</string>
+
+    <string name="error_valor_vacio">Digite el valor del gasto</string>
+    <string name="error_valor_invalido">Digite un valor numérico mayor que cero</string>
+    <string name="error_presupuesto_vacio">Digite el valor del presupuesto</string>
 
     <string name="grafico_titulo">Gasto por categoría</string>
+    <string name="formato_porcentaje">%1$d %%</string>
     <string name="cat_alimentacion">Alim.</string>
     <string name="cat_transporte">Trans.</string>
     <string name="cat_hogar">Hogar</string>
