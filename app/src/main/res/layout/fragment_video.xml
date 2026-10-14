@@ -13,12 +13,18 @@
         android:textSize="15sp"
         android:textStyle="bold" />
 
-    <VideoView
-        android:id="@+id/videoFinanzas"
+    <!-- RF10: reproductor del video de educacion financiera -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="190dp"
         android:layout_marginTop="10dp"
-        android:background="@color/gris_oscuro" />
+        android:background="@color/gris_oscuro">
+
+        <TextureView
+            android:id="@+id/texturaVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
     <TextView
         android:layout_width="match_parent"

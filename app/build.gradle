@@ -27,4 +27,16 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.fragment:fragment:1.8.2'
+
+    // Las librerias de AndroidX arrastran kotlin-stdlib en versiones distintas.
+    // Desde Kotlin 1.8 las clases de jdk7 y jdk8 viven dentro de kotlin-stdlib,
+    // asi que se alinean todas en la misma version para evitar duplicados.
+    constraints {
+        implementation('org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22') {
+            because 'alinea la version y evita clases duplicadas'
+        }
+        implementation('org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22') {
+            because 'alinea la version y evita clases duplicadas'
+        }
+    }
 }

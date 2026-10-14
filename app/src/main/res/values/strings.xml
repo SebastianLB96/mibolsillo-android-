@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<string name="video_error">No se pudo reproducir el video en este dispositivo</string>
     <string name="app_name">MiBolsillo</string>
     <string name="app_titulo">MiBolsillo · Rastreador de Gastos</string>
 
@@ -60,8 +61,8 @@
 
     <!-- ===== Video ===== -->
     <string name="video_titulo">Cómo construir tu presupuesto mensual</string>
-    <string name="video_meta">Educación financiera · 4:15 min</string>
-    <string name="video_descripcion">Video de apoyo que explica la regla 50/30/20 para distribuir los ingresos entre necesidades, gastos personales y ahorro. Use los controles para reproducir, pausar y avanzar. Para usar un video propio, copie el archivo en res/raw con el nombre video_finanzas.mp4.</string>
+    <string name="video_meta">Educación financiera · 24 segundos</string>
+    <string name="video_descripcion">Video de apoyo que explica la regla 50/30/20 para distribuir los ingresos entre necesidades, gastos personales y ahorro. Toque el video para mostrar los controles de reproduccion, pausa y avance.</string>
 
     <!-- ===== Web ===== -->
     <string name="web_hint">Digite la dirección del sitio</string>
