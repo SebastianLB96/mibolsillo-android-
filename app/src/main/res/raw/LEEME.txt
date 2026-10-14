@@ -1,2 +1,8 @@
-Copie aqui el archivo de video con el nombre exacto video_finanzas.mp4
-Si la carpeta queda vacia, VideoFragment reproduce un video de ejemplo desde internet.
+Esta carpeta contiene video_finanzas.mp4, el video de educacion financiera que
+reproduce VideoFragment (RF10 / CU-10).
+
+Para reemplazarlo por uno propio, copie aqui su archivo con ese mismo nombre.
+Formato recomendado: MP4 con codec H.264, perfil baseline, resolucion 1280x720.
+
+Si el archivo no existe, VideoFragment reproduce un video de ejemplo alojado en
+internet como respaldo.

@@ -13,6 +13,7 @@
         android:textSize="15sp"
         android:textStyle="bold" />
 
+    <!-- RF3: lista de imagenes con barra de desplazamiento -->
     <ListView
         android:id="@+id/listaGastos"
         android:layout_width="match_parent"
@@ -24,57 +25,75 @@
         android:listSelector="@android:color/transparent"
         android:scrollbars="vertical" />
 
+    <!-- RF4: descripcion de la imagen seleccionada -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_card_verde"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:padding="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/detalle_titulo"
-            android:textColor="@color/verde_oscuro"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imgDetalleComprobante"
+            android:layout_width="86dp"
+            android:layout_height="110dp"
+            android:background="@drawable/bg_miniatura"
+            android:contentDescription="@string/desc_comprobante"
+            android:padding="2dp"
+            android:scaleType="fitCenter" />
 
-        <TextView
-            android:id="@+id/txtDetalleTitulo"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/gris_oscuro"
-            android:textSize="12sp" />
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txtDetalleCategoria"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/gris_oscuro"
-            android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_titulo"
+                android:textColor="@color/verde_oscuro"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/txtDetalleMedio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/gris_oscuro"
-            android:textSize="12sp" />
+            <TextView
+                android:id="@+id/txtDetalleTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/gris_oscuro"
+                android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/txtDetalleComprobante"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/gris_oscuro"
-            android:textSize="12sp" />
+            <TextView
+                android:id="@+id/txtDetalleCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris_oscuro"
+                android:textSize="12sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/detalle_ayuda"
-            android:textColor="@color/gris_texto"
-            android:textSize="11sp" />
+            <TextView
+                android:id="@+id/txtDetalleMedio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris_oscuro"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtDetalleComprobante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris_oscuro"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/detalle_ayuda"
+                android:textColor="@color/gris_texto"
+                android:textSize="11sp" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

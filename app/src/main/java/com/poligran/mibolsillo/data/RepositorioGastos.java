@@ -1,5 +1,6 @@
 package com.poligran.mibolsillo.data;
 
+import com.poligran.mibolsillo.R;
 import com.poligran.mibolsillo.model.Gasto;
 
 import java.text.NumberFormat;
@@ -156,17 +157,17 @@ public class RepositorioGastos {
 
     /** Datos de ejemplo con los que arranca la aplicacion. */
     private void cargarDatosIniciales() {
-        gastos.add(new Gasto(1, "Mercado", "12/03/2026", "Alimentacion",
-                186400, "Tarjeta debito", "Factura POS N.º 004512"));
-        gastos.add(new Gasto(2, "Energia", "05/03/2026", "Hogar",
-                142900, "Debito automatico", "Recibo N.º 88231"));
-        gastos.add(new Gasto(3, "Transporte", "03/03/2026", "Transporte",
-                12500, "Efectivo", "Tiquete N.º 1042"));
-        gastos.add(new Gasto(4, "Arriendo", "01/03/2026", "Hogar",
-                950000, "Transferencia", "Comprobante N.º 7781"));
-        gastos.add(new Gasto(5, "Internet", "28/02/2026", "Ocio",
-                89900, "Tarjeta credito", "Factura N.º 55110"));
-        gastos.add(new Gasto(6, "Medico", "20/02/2026", "Salud",
-                64000, "Efectivo", "Recibo N.º 2098"));
+        gastos.add(new Gasto(R.drawable.comp_mercado, "Mercado", "12/03/2026", "Alimentacion",
+                186400, "Tarjeta debito", "Factura POS N.\u00ba 004512"));
+        gastos.add(new Gasto(R.drawable.comp_energia, "Energia", "05/03/2026", "Hogar",
+                142900, "Debito automatico", "Recibo N.\u00ba 88231"));
+        gastos.add(new Gasto(R.drawable.comp_transporte, "Transporte", "03/03/2026", "Transporte",
+                12500, "Efectivo", "Tiquete N.\u00ba 1042"));
+        gastos.add(new Gasto(R.drawable.comp_arriendo, "Arriendo", "01/03/2026", "Hogar",
+                950000, "Transferencia", "Comprobante N.\u00ba 7781"));
+        gastos.add(new Gasto(R.drawable.comp_internet, "Internet", "28/02/2026", "Ocio",
+                89900, "Tarjeta credito", "Factura N.\u00ba 55110"));
+        gastos.add(new Gasto(R.drawable.comp_salud, "Medico", "20/02/2026", "Salud",
+                64000, "Efectivo", "Recibo N.\u00ba 2098"));
     }
 }

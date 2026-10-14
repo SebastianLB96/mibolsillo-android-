@@ -34,13 +34,13 @@
                 android:padding="12dp">
 
                 <ImageView
-                    android:layout_width="52dp"
-                    android:layout_height="52dp"
+                    android:id="@+id/imgFotoPerfil"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
                     android:background="@drawable/bg_avatar"
                     android:contentDescription="@string/desc_foto_perfil"
-                    android:padding="12dp"
-                    android:src="@drawable/ic_perfil"
-                    android:tint="@color/blanco" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto_perfil" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -145,9 +145,8 @@ public class BotonesFragment extends Fragment implements View.OnClickListener {
 
         String fecha = new SimpleDateFormat("dd/MM/yyyy", new Locale("es", "CO"))
                 .format(new Date());
-        int miniatura = repositorio.getCantidadGastos() % 6 + 1;
 
-        Gasto gasto = new Gasto(miniatura, categoria, fecha, categoria,
+        Gasto gasto = new Gasto(imagenDeCategoria(categoria), categoria, fecha, categoria,
                 valor, medioPago, getString(R.string.comprobante_manual));
 
         repositorio.registrarGasto(gasto);
@@ -245,6 +244,21 @@ public class BotonesFragment extends Fragment implements View.OnClickListener {
     // ------------------------------------------------------------------
     //  Apoyo
     // ------------------------------------------------------------------
+
+    /** Imagen de comprobante que corresponde a la categoria elegida. */
+    private int imagenDeCategoria(String categoria) {
+        if (getString(R.string.cat_alimentacion_larga).equals(categoria)) {
+            return R.drawable.comp_mercado;
+        } else if (getString(R.string.cat_transporte_larga).equals(categoria)) {
+            return R.drawable.comp_transporte;
+        } else if (getString(R.string.cat_hogar_larga).equals(categoria)) {
+            return R.drawable.comp_energia;
+        } else if (getString(R.string.cat_ocio_larga).equals(categoria)) {
+            return R.drawable.comp_internet;
+        } else {
+            return R.drawable.comp_salud;
+        }
+    }
 
     /** Refleja el porcentaje consumido y cambia de color si hay exceso (RF8). */
     private void actualizarBarraPresupuesto() {

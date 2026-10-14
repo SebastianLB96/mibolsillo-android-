@@ -98,6 +98,11 @@
 
     <string name="grafico_titulo">Gasto por categoría</string>
     <string name="formato_porcentaje">%1$d %%</string>
+    <string name="cat_alimentacion_larga">Alimentacion</string>
+    <string name="cat_transporte_larga">Transporte</string>
+    <string name="cat_hogar_larga">Hogar</string>
+    <string name="cat_ocio_larga">Ocio</string>
+    <string name="cat_salud_larga">Salud</string>
     <string name="cat_alimentacion">Alim.</string>
     <string name="cat_transporte">Trans.</string>
     <string name="cat_hogar">Hogar</string>

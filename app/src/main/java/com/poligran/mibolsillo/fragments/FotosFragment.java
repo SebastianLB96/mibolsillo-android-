@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,6 +30,7 @@ public class FotosFragment extends Fragment {
 
     // --- Variables vinculadas a las vistas del layout ---
     private ListView listaGastos;
+    private ImageView imgDetalleComprobante;
     private TextView txtDetalleTitulo;
     private TextView txtDetalleCategoria;
     private TextView txtDetalleMedio;
@@ -47,6 +49,7 @@ public class FotosFragment extends Fragment {
 
         // --- Vinculo de las variables con los identificadores del layout ---
         listaGastos           = vista.findViewById(R.id.listaGastos);
+        imgDetalleComprobante = vista.findViewById(R.id.imgDetalleComprobante);
         txtDetalleTitulo      = vista.findViewById(R.id.txtDetalleTitulo);
         txtDetalleCategoria   = vista.findViewById(R.id.txtDetalleCategoria);
         txtDetalleMedio       = vista.findViewById(R.id.txtDetalleMedio);
@@ -76,6 +79,7 @@ public class FotosFragment extends Fragment {
         adaptador.setSeleccionada(posicion);
         Gasto g = datos.get(posicion);
 
+        imgDetalleComprobante.setImageResource(g.getImagenComprobante());
         txtDetalleTitulo.setText(getString(R.string.detalle_encabezado,
                 g.getDescripcion(), g.getFecha()));
         txtDetalleCategoria.setText(getString(R.string.detalle_categoria,

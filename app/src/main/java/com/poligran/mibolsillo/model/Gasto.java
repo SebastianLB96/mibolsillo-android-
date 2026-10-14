@@ -10,7 +10,7 @@ import com.poligran.mibolsillo.data.RepositorioGastos;
  */
 public class Gasto {
 
-    private final int numeroMiniatura;
+    private final int imagenComprobante;
     private final String descripcion;
     private final String fecha;
     private final String categoria;
@@ -18,9 +18,9 @@ public class Gasto {
     private final String medioPago;
     private final String comprobante;
 
-    public Gasto(int numeroMiniatura, String descripcion, String fecha, String categoria,
+    public Gasto(int imagenComprobante, String descripcion, String fecha, String categoria,
                  long valor, String medioPago, String comprobante) {
-        this.numeroMiniatura = numeroMiniatura;
+        this.imagenComprobante = imagenComprobante;
         this.descripcion = descripcion;
         this.fecha = fecha;
         this.categoria = categoria;
@@ -29,7 +29,9 @@ public class Gasto {
         this.comprobante = comprobante;
     }
 
-    public int getNumeroMiniatura() { return numeroMiniatura; }
+    /** Identificador del recurso de imagen del comprobante asociado. */
+    public int getImagenComprobante() { return imagenComprobante; }
+
     public String getDescripcion()  { return descripcion; }
     public String getFecha()        { return fecha; }
     public String getCategoria()    { return categoria; }

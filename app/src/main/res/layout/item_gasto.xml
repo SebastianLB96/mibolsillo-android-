@@ -7,19 +7,14 @@
     android:orientation="horizontal"
     android:padding="8dp">
 
-    <FrameLayout
-        android:id="@+id/viewMiniatura"
-        android:layout_width="44dp"
-        android:layout_height="36dp">
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/desc_comprobante"
-            android:src="@drawable/ic_fotos"
-            android:tint="@color/blanco" />
-    </FrameLayout>
+    <ImageView
+        android:id="@+id/imgComprobante"
+        android:layout_width="46dp"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_miniatura"
+        android:contentDescription="@string/desc_comprobante"
+        android:padding="2dp"
+        android:scaleType="fitCenter" />
 
     <LinearLayout
         android:layout_width="0dp"

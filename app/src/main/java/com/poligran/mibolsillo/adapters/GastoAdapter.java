@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.poligran.mibolsillo.R;
@@ -14,11 +15,6 @@ import java.util.List;
 
 /** Adaptador de la lista de gastos del fragmento Fotos (RF3). */
 public class GastoAdapter extends BaseAdapter {
-
-    private static final int[] MINIATURAS = {
-            R.drawable.bg_thumb_1, R.drawable.bg_thumb_2, R.drawable.bg_thumb_3,
-            R.drawable.bg_thumb_4, R.drawable.bg_thumb_5, R.drawable.bg_thumb_6
-    };
 
     private final Context contexto;
     private final List<Gasto> datos;
@@ -47,13 +43,12 @@ public class GastoAdapter extends BaseAdapter {
 
         Gasto g = datos.get(posicion);
 
-        View miniatura   = fila.findViewById(R.id.viewMiniatura);
-        TextView desc    = fila.findViewById(R.id.txtDescripcionGasto);
-        TextView resumen = fila.findViewById(R.id.txtResumenGasto);
-        TextView valor   = fila.findViewById(R.id.txtValorGasto);
+        ImageView miniatura = fila.findViewById(R.id.imgComprobante);
+        TextView desc       = fila.findViewById(R.id.txtDescripcionGasto);
+        TextView resumen    = fila.findViewById(R.id.txtResumenGasto);
+        TextView valor      = fila.findViewById(R.id.txtValorGasto);
 
-        int indice = Math.max(0, Math.min(g.getNumeroMiniatura() - 1, MINIATURAS.length - 1));
-        miniatura.setBackgroundResource(MINIATURAS[indice]);
+        miniatura.setImageResource(g.getImagenComprobante());
         desc.setText(g.getDescripcion());
         resumen.setText(g.getResumen());
         valor.setText(g.getValorFormateado());
